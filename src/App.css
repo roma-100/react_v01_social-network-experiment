@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --clr-dark: green;
+  --clr-light: rgb(75, 243, 33);
+  --clr-font: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-wrapper {
+  display: -ms-grid;
+  display: grid;
+  /* height: 100vh; */
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  /*   grid-template-rows: 10vh 90vh; */
+  grid-gap: .5rem;
+}
+
+.dialogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.dialogs-names {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dialogs-messages {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
+
+.user-info__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info__hero .user-info__id {
+  background-color: var(--clr-light);
+  color: var(--clr-font);
+  padding: .2rem;
+  border-radius: 5px;
+}
+
+.user-info__hero .user-info__photo-small {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* 
+    --clr-dark: green;
+    --clr-light: rgb(75, 243, 33);
+    --clr-font: rgb(255, 255, 255);
+*/
+.user-info {
+  display: inline-block;
+  color: var(--clr-dark);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.user-info-holder {
+  border: 1px var(--clr-dark) solid;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--clr-dark);
+  font-size: .9rem;
+}
+/*# sourceMappingURL=App.css.map */

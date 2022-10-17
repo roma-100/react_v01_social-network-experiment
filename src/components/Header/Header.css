@@ -1,0 +1,48 @@
+.header {
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-color: var(--clr-dark);
+  height: 50px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*   .login-block>a {
+    text-decoration: none;
+  } */
+}
+
+.header .logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 2rem;
+  border-radius: 20%;
+  /* background-image: url('./images/logo.png'); */
+  background: url("../../images/logo.png") 0 0/contain no-repeat;
+}
+
+.header .login-block {
+  display: inline-block;
+  padding: 0.4rem;
+  color: var(--clr-font);
+  text-decoration: none;
+  border: 1px solid var(--clr-font);
+  border-radius: .25rem;
+  margin-right: 2rem;
+}
+
+.header .login-block:hover {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+/*# sourceMappingURL=Header.css.map */

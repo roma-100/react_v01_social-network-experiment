@@ -1,0 +1,38 @@
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: var(--clr-dark);
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+        height: 30px;
+        width: 30px;
+        margin-left: 2rem;
+        border-radius: 20%;
+        /* background-image: url('./images/logo.png'); */
+        background: url('../../images/logo.png') 0 0/contain no-repeat;
+  }
+  .login-block{
+    display: inline-block;
+    padding: 0.4rem;
+    color: var(--clr-font);
+    text-decoration: none;
+    border: 1px solid var(--clr-font) ;
+    border-radius: .25rem;
+    margin-right: 2rem;
+    &:hover {
+      background-color: var(--clr-light);
+      color: var(--clr-dark);
+      
+    }
+  }
+/*   .login-block>a {
+    text-decoration: none;
+  } */
+}
+

@@ -1,0 +1,21 @@
+
+.header {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: green;
+    height: 50px;
+  }
+  .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;;
+  }
+  
+  .logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 2rem;
+    border-radius: 20%;
+  /* background-image: url('./images/logo.png'); */
+  background: url('../../images/logo.png') 0 0/contain no-repeat;
+  } 
